@@ -7,6 +7,7 @@
 :root{
     --backgroud: #000000;
     --red: #C41616;
+    --blue:#001F70;
     --gradient: linear-gradient(270deg, #000000 50%, rgba(0, 0, 0, 0) 100%);
     --font : 'Titillium Web', sans-serif;
     
@@ -34,6 +35,7 @@ body{
     height: 100%;
     /* background-color: antiquewhite; */
     margin: auto;
+    /* background-color: #C41616; */
 }
 .topo img{
     width: 100%;
@@ -135,6 +137,47 @@ body{
 .games ul a:hover img{
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+}
+.about{
+    height: 31.25em;
+    background-color: var(--blue);
+    position: relative;
+}
+.about-angulation{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.angulation{
+    width: 100%;
+    height: 24.125em;
+    background-color:var(--backgroud);
+    transform: skewY(-3deg);
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:absolute;
+    top: 0;
+    margin: auto;
+    left: 21.75em;
+    /* background-color: aquamarine; */
+
+}
+.content-text{
+    color: #fff;
+}
+.content-text h1{
+    font-size: 2.18em;
+    margin-top: 2em;
+}
+.content-text p{
+    font-family: var(--font);
+    font-size: 1.25em;
+    margin-top: 1em;
 }
 
 @media screen and (max-Width:74.93px){
