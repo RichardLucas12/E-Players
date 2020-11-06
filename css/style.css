@@ -29,6 +29,13 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.meuslinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
 .content{
     width: 90%;
     max-width: 75em;
@@ -38,7 +45,7 @@ body{
     /* background-color: #C41616; */
 }
 .content-maior{
-    width: 90%;
+    width: 95%;
     margin: auto;
     /* background-color: violet; */
     height: 100%;
@@ -67,6 +74,7 @@ body{
     text-shadow: -5px 0 10px white;
 }
 #bars{
+    color: white;
     display: none;
 }
 .banner{
@@ -242,6 +250,12 @@ body{
     height: auto;
     background-color:#1E1C21;
 }
+.center{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 .news{
     width: 70%;
     height: 90%;
@@ -355,7 +369,7 @@ background:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, r
     font-size: 1.5em;
 }
 .siga-nos img{
-    width: auto;
+    width:auto;
     height: auto;
 }
 #email{
@@ -370,15 +384,166 @@ background:linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, r
 }
 
 @media screen and (max-Width:74.93em){
+    body{
+        font-size: 14px;
+    }
+    .banner-text h1{
+    font-size:4.9em;
+    }
+    .games ul{
+        flex-wrap: wrap;
+    }
+    .games{
+        height: auto;
+    }
+    .content-text h1{
+        margin-top: 1em;
+    }
+    .content-news{
+        justify-content: space-around;
+    }
+    .games{
+        position: relative;
+    }
     
 }
 @media screen and (max-Width:62em){
-    
+    body{
+        font-size: 14px;
+    }
+    .banner-text p{
+        font-size: 1.6em;
+    }
+    .menu ul li a{
+        font-size: 1.3em;
+    }
+    .banner-text h1{
+        font-size: 4em;
+    }
+    .conteudo p{
+        font-size: 1.3em;
+    }
+    .content-text p{
+        font-size: 1.15em;
+    }
+    .news{
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .next-games{
+        width: 100%;
+    }
+    .next-games-bg{
+        margin: auto;
+    }
+    .center{
+        flex-wrap: wrap;
+    }
+    .news h2{
+        text-align: center;
+    }
+    .next-games h2{
+        text-align: center;
+    }
+    .next-games-bg{
+        margin-bottom: 20px;
+    }
+    .content-rodape img{
+        width: auto;
+    }
+    .siga-nos h2{
+        display: none;
+    }
+    .next-games-bg p{
+        font-size: 1.5em;
+    }
+    .next-games-match img{
+        width: auto;
+    }
+    .next-games-match{
+        padding-top: 0;
+    }
+    .next-games-match > p{
+        margin-top: 0%;
+    }
+    .next-games-match img{
+        max-width:none;
+    }
+    .games ul{
+        justify-content: space-evenly;
+    }
 }
-@media screen and (max-Width:47.93em){
-    
-    
+@media screen and (max-Width:48em){
+    .topo img{
+        width: 90%;
+    }
+    boody{
+        font-size: 12px;
+    }
+    .banner-text h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    .banner-text p {
+        font-size: 1.2em;
+    }
+    .banner-text a{
+        margin-top: 1em;
+        padding: 0.2em 1em;
+        font-size: 1.4em;  
+    }
+    .banner{
+        /* height:auto; */
+        position:inherit;
 }
-@media screen and (max-Width:36em){
-    
+    .about img{
+        display: none;
+    }
+    .content-text h1{
+        text-align: center;
+    }
+    .confronto-3{
+        display: none;
+    }
+    .games ul{
+        justify-content: space-evenly;
+    }
+    #bars{
+        display: flex;
+    }
+    .menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .meuslinks{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        background-color:var(--backgroud);
+        justify-content: space-between;
+        position: absolute;
+        top: 70px;
+    }
+    .content-maior{
+        width: 95%;
+    }
+    .banner-content{
+        justify-content: center;
+    }
+    .banner-text{
+        height: auto;
+        display: inline;
+        text-align: center;
+    }
+    .banner-content {
+        display: inline;
+    }
+    .banner-position{
+        height: 600px;
+        display: inline;
+        top: 300px;
+    }
+    .banner-text a{
+        margin-left: 200px;
+    }
 }

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Players</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f3e757fd09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header class="topo">
@@ -14,24 +15,24 @@
                 <img src="img/Logo_Branco.png" alt="logo E-Players">
             </a>
             <nav class="menu">
-                <ul class="flex-center">
+                <ul class=" meuslinks" id="meuslinks2">
                     <li><a href="index.html">inicio</a></li>
                     <li><a href="#">horarios</a></li>
                     <li><a href="#">campeonatos</a></li>
                     <li><a href="#">resulados</a></li>
                     <li><a href="#">notícias</a></li>
                 </ul> 
-                <a href="#" id="bars">
+                <a href="#" id="bars" onclick="abrirmenu()">
                     <i class="fas fa-bars"></i>
                 </a> 
             </nav>
         </div>
     </header>
-    <main>
         <section class="banner">
             <picture>
-                <source media="(max-width:768em) and (min-widith:0)" srcset="img/Bannerr576.jpg">
-                <source media="(max-width:48em)" srcset="img/Banner768.jpg">
+                <source media="(max-width:36em )" srcset="img/nova.jpg">
+                <!-- <source media="(max-width:48em )" srcset="img/Banner768.jpg"> -->
+                <source media="(max-width:53em)" srcset="img/nova.jpg">
                 <source media="(max-width:90em)" srcset="img/Banner1440.jpg">
                 <img src="img/Banner1920.jpg" alt="banner-pilotos-f1">
             </picture>
@@ -48,11 +49,11 @@
         <section class="games">
             <div class="content-maior flex-center">
                 <ul>
-                    <li><a href="#"><img src="img/f1.png" alt="formula-1"></a></li>
-                    <li><a href="#"><img src="img/lol.png" alt="logo-lol"></a></li>
-                    <li><a href="#"><img src="img/cs.png" alt="loog-cs"></a></li>
-                    <li><a href="#"><img src="img/valorant.png" alt="logo-valorant"></a></li>
-                    <li><a href="#"><img src="img/fifa.png" alt="logo-fifa"></a></li>
+                    <li><a id="f1" href="#"><img src="img/f1.png" alt="formula-1"></a></li>
+                    <li><a id="lol" href="#"><img src="img/lol.png" alt="logo-lol"></a></li>
+                    <li><a id="cs" href="#"><img src="img/cs.png" alt="loog-cs"></a></li>
+                    <li><a id="vava" href="#"><img src="img/valorant.png" alt="logo-valorant"></a></li>
+                    <li><a id="fifa" href="#"><img src="img/fifa.png" alt="logo-fifa"></a></li>
                 </ul>
             </div>
         </section>
@@ -100,7 +101,7 @@
                 </div>
         </section>
         <div class="bg-news">
-            <div class="content-maior flex-center">
+            <div class="content-maior center">
                 <section class="news">
                     <h2>Notícias</h2>
                     <div class="content-news">
@@ -245,7 +246,7 @@
             </div>
         </div><!--Fim BG NEWS-->
         <footer class="rodape">
-            <div class="content">
+            <div class="content-maior">
                 <div class="content-rodape">
                     <div class="links largura">
                         <div class="links-uteis">
@@ -288,6 +289,15 @@
                 
             </div>
         </footer>
-    </main>
+    <script>
+        function abrirmenu() {
+          var x = document.getElementById("meuslinks2");
+          if (x.style.display === "flex") {
+                x.style.display = "none";
+          } else {
+                x.style.display = "flex";
+          }
+        }
+    </script>
 </body>
 </html>
